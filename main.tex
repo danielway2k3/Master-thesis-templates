@@ -1,0 +1,87 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thesis Template
+% Author    : Nguyen Cong Tien Dung
+% Copyright : © 2025 Nguyen Cong Tien Dung
+% License   : Creative Commons Attribution-NonCommercial 4.0 International
+%             (CC BY-NC 4.0) — https://creativecommons.org/licenses/by-nc/4.0/
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Import Package %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper]{report}
+\input{preamble}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Trang bìa %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{cover_page}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Trang trống %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\thispagestyle{empty}
+\null
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Acknowledgements %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage % đảm bảo trang trắng được chèn đúng (với sách 2 mặt)
+\pagenumbering{roman}
+\setcounter{page}{1}
+\pagestyle{plain} % kiểu đánh số đơn giản: i, ii, iii,...
+\input{acknowledgements.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Abstract %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{abstract.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Mục lục %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\tableofcontents
+%\listofsymbols
+
+\newpage
+\addcontentsline{toc}{chapter}{\textbf{Danh sách bảng}}
+\listoftables
+
+\newpage
+\addcontentsline{toc}{chapter}{\textbf{Danh sách hình vẽ}}
+\listoffigures
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chương 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagestyle{fancy}
+\input{Chuong1/chapter1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chương 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\input{Chuong2/chapter2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chương 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\input{Chuong3/chapter3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chương 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\input{Chuong4/chapter4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chương 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\input{Chuong5/chapter5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Reference %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{IEEEtran} % hoặc plainnat, apa, abbrv,... tùy yêu cầu
+\bibliography{references}   
+\addcontentsline{toc}{chapter}{\textbf{Tài liệu tham khảo}}
+\end{document}
+

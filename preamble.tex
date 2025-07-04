@@ -1,0 +1,69 @@
+%=================== Thiết lập tiền xử lý ===================
+\usepackage[T5]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{mathptmx}
+\usepackage[
+    top=3cm,
+    bottom=3cm,
+    left=3cm,
+    right=2.5cm
+]{geometry}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{setspace}
+\setlength{\parskip}{0.5em}
+
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\setlist[itemize]{label=-}
+
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\usepackage{cleveref}
+
+\fancyhead[L]{\includegraphics[height=1.2cm]{Logo/Logo-KHTN.jpg}}
+\fancyhead[R]{\leftmark}
+\fancyfoot[C]{\thepage}
+
+% Tùy chỉnh tiếng Việt cho các autorefs
+\renewcommand{\figurename}{Hình}
+\renewcommand{\tablename}{Bảng}
+\renewcommand{\chaptername}{Chương}
+\renewcommand{\equationname}{Công thức} 
+\addto\extrasvietnamese{
+  \renewcommand{\chapterautorefname}{Chương}
+  \renewcommand{\figureautorefname}{Hình}
+  \renewcommand{\tableautorefname}{Bảng}
+    \renewcommand{\equationautorefname}{Công thức}
+}
+\setlength{\headsep}{40pt}
+
+% Tùy chỉnh kiểu chương và section
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\centering\LARGE}
+  {Chương \thechapter}
+  {1ex}
+  {\Huge}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {\thesection}
+  {1em}
+  {}
+
+% Làm to tiêu đề Mục lục, Danh sách bảng, Danh sách hình
+\renewcommand{\cfttoctitlefont}{\Huge\bfseries}
+\renewcommand{\cftloftitlefont}{\Huge\bfseries}
+\renewcommand{\cftlottitlefont}{\Huge\bfseries}
+
+\setlength{\parindent}{0pt}
+\sloppy

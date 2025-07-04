@@ -1,0 +1,19 @@
+\chapter{\textbf{Thảo luận và Kết luận}}
+
+\section{Cách tham chiếu đến công thức}
+
+\begin{equation}
+    \text{TF-IDF}(t, d) = \text{TF}(t, d) \times \text{IDF}(t)
+    \label{eq:tf_idf}
+\end{equation}
+
+\begin{align}
+\mathrm{TF}(t, d) &= \frac{f_{t,d}}{\sum\limits_{t' \in d} f_{t',d}} \tag{1} \label{eq:tf} \\
+\mathrm{IDF}(t) &= \log \left( \frac{N}{\mathrm{df}_t} \right) \label{eq:idf} \tag{2}
+\end{align}
+Cách tham chiếu đến công thức: \\
+%% Tham chiếu đến công thức bằng eqrf
+\eqref{eq:tf}: tần suất từ trong tài liệu \\
+\eqref{eq:idf}: tần suất nghịch đảo của tài liệu \\
+
+Công thức \eqref{eq:tf_idf} đã nêu ra một trong những phương pháp truyền thống và phổ biến nhất để chuyển đổi văn bản thành vector

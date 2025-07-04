@@ -1,0 +1,159 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.synctex(busy)
+*.pdfsync
+*.alg
+*.loa
+*.nav
+*.snm
+*.vrb
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.figlist
+*.makefile
+*.fignums
+*.figexts
+*.tikzexternalcache/
+*.figlist
+*.fignums
+*.figexts
+*.figbak
+*.auxlock
+
+# LaTeX Beamer
+*.nav
+*.snm
+*.vrb
+
+# LaTeX TikZ
+*.figlist
+*.makefile
+*.fignums
+*.figexts
+*.tikzexternalcache/
+
+# Asymptote
+*.asy
+*.pre
+
+# Glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+
+# Gnuplot
+*.gnuplot
+*.table
+
+# Makeindex
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# Minitoc
+*.maf
+*.mtc[0-9]*
+*.slf[0-9]*
+*.slt[0-9]*
+*.stc[0-9]*
+
+# Minted
+_minted*
+*.pyg
+
+# Nomencl
+*.nlo
+*.nls
+*.nlg
+
+# Sage
+*.sage.py
+
+# SyncTeX
+*.synctex.gz
+*.synctex(busy)
+*.pdfsync
+
+# Algorithms
+*.alg
+*.loa
+
+# Continuous integration
+.travis.yml
+.appveyor.yml
+.circleci/
+.github/
+
+# Editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archive files
+*.tar.gz
+*.zip
+*.rar
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Temporary files
+*.tmp
+*.temp
